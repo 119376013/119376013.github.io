@@ -1,0 +1,195 @@
+
+/* Adding a background to the topnav bar */
+.topnav {
+		 background-color: #E3E2DF;
+		 overflow: hidden;
+		 margin-top: 30px;
+		 
+}
+	
+/* Style the links inside the navigation bar */	
+.topnav a {
+			float: left;
+			color: #9A1750;
+			text-align: center;
+			padding: 5px 10px;
+			text-decoration: none;
+			font-size: 25px;
+			font-family: Times;	
+			
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+				 background-color: #E3AFBC;
+				 color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+					background-color: #E3AFBC;
+					color: black;
+}
+
+/* styling website background */
+body {
+		background-color: #E3E2DF;	
+}
+
+/* Adding a background to the sidenav bar */
+.sidenav {
+	width: 140px;
+	position: fixed;
+	z-index: 1;
+	top: 250px;
+	left: 10px;
+	background: #E3E2DF;
+	overflow-x: hidden;
+	padding: 8px 0;
+}
+
+/* Style the links inside the navigation bar */
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #9A1750;
+	display: block;
+	text-align: center;
+	
+}
+
+/* Change the color of links on hover */
+.sidenav a:hover {
+ 	background-color: #E3AFBC;
+	color: black;
+}
+
+/* Adds a color to the active/current link */
+.sidenav a.active {
+	background-color: #E3AFBC;
+	color: black;
+}
+
+/* styling for main body */
+.main {
+	margin-left: 250px; /* Same width as the sidebar + left position in px */
+	float: center;
+	padding: 0px 20px;
+	text-align: center;
+	display: inline-block;
+}	
+
+/* badminton div styling */
+#badminton {
+	margin-left: 250px;
+	padding: 20px 10px;
+	float: center;
+	
+}
+
+/* badminton title styling */
+#badminton-title {
+	font-size: 35px;
+	color: #9A1750;
+	margin-right: 380px;
+	margin-bottom: -0.5px	
+}
+
+/* scroller1 styling */
+#scroller1 {
+    position: relative;
+	right: 190px;
+	
+}
+
+/* inner scroll area styling */
+#scroller1 .innerScrollArea1 {
+	overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 70px;
+	border: thick solid #9A1750;
+}
+
+/* scroller list styling */
+#scroller1 ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* scroller list items styling */
+#scroller1 li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+/* badminton paragraph styling */
+#badminton-para {
+	margin-top: -50px;
+	font-size: 20px;
+	text-align: left;
+	margin-left: -350px;
+}
+
+/* volleyball div styling */
+#volleyball {
+	margin-left: 250px;
+	padding: 20px 10px;
+	float: center;
+	
+}
+
+/* volleyball title styling */
+#volbol-title {
+	font-size: 35px;
+	color: #9A1750;
+	margin-right: 380px;
+	margin-bottom: -0.5px	
+}
+
+/* scroller 2 styling */
+#scroller2 {
+    position: relative;
+	right: 190px;
+	
+}
+
+/*inner scroll area styling scroller 2 */
+#scroller2 .innerScrollArea2 {
+	overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 70px;
+	border: thick solid #9A1750;
+}
+
+/* scroller2 list styling */
+#scroller2 ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* scroller2 list items styling */
+#scroller2 li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+/* volleyball paragraph styling */
+#volbol-para {
+	margin-top: -50px;
+	font-size: 20px;
+	text-align: left;
+	margin-left: -350px;
+}

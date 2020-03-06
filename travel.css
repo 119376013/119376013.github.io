@@ -1,0 +1,81 @@
+
+/* Adding a background to the topnav bar */
+.topnav {
+		 background-color: #E3E2DF;
+		 overflow: hidden;
+		 margin-top: 30px;
+		 
+}
+	
+/* Style the links inside the navigation bar */	
+.topnav a {
+			float: left;
+			color: #9A1750;
+			text-align: center;
+			padding: 5px 10px;
+			text-decoration: none;
+			font-size: 25px;
+			font-family: Times;	
+			
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+				 background-color: #E3AFBC;
+				 color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+					background-color: #E3AFBC;
+					color: black;
+}
+
+/* styling website background */
+body {
+		background-color: #E3E2DF;	
+}
+
+/* Adding a background to the sidenav bar */
+.sidenav {
+	width: 140px;
+	position: fixed;
+	z-index: 1;
+	top: 250px;
+	left: 10px;
+	background: #E3E2DF;
+	overflow-x: hidden;
+	padding: 8px 0;
+}
+
+/* Style the links inside the navigation bar */
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #9A1750;
+	display: block;
+	text-align: center;
+	
+}
+
+/* Change the color of links on hover */
+.sidenav a:hover {
+ 	background-color: #E3AFBC;
+	color: black;
+}
+
+/* Adds a color to the active/current link */
+.sidenav a.active {
+	background-color: #E3AFBC;
+	color: black;
+}
+
+/* styling for main body */
+.main {
+	margin-left: 250px; /* Same width as the sidebar + left position in px */
+	float: center;
+	padding: 0px 20px;
+	text-align: center;
+	display: inline-block;
+}	

@@ -1,0 +1,221 @@
+
+/* Adding a background to the topnav bar */
+.topnav {
+	background-color: #E3E2DF;
+	overflow: hidden;
+	margin-top: 30px;
+}
+	
+/* Style the links inside the navigation bar */	
+.topnav a {
+	float: left;
+	color: #9A1750;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Times;
+			
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	 
+	background-color: #E3AFBC;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #E3AFBC;
+	color: black;
+}
+
+/* styling website background */
+body {
+	background-color: #E3E2DF;	
+}
+
+/* Adding a background to the sidenav bar */
+.sidenav {
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 250px;
+	left: 10px;
+	background: #E3E2DF;
+	overflow-x: hidden;
+	padding: 8px 0;
+}
+
+/* Style the links inside the navigation bar */
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #9A1750;
+	display: block;
+	text-align: center;
+	
+}
+
+/* Change the color of links on hover */
+.sidenav a:hover {
+ 	background-color: #E3AFBC;
+	color: black;
+}
+
+/* Adds a color to the active/current link */
+.sidenav a.active {
+	background-color: #E3AFBC;
+	color: black;
+}
+
+/* styling for main body */
+.main {
+	margin-left: 250px; /* Same width as the sidebar + left position in px */
+	float: center;
+	padding: 0px 20px;
+	text-align: center;
+	display: inline-block;
+}	
+
+/* vendor div styling */
+#vendor {
+	float: center;
+	text-align: center;
+	margin-left: 150px;
+}
+
+/* styling the vendor paragraph */
+#v-para {
+	font-size: 20px;
+	text-align:left;
+}
+
+/* styling the vendor paragraph title */
+#v-head {
+	font-size: 25px;
+	margin-right: 130px;
+	color: #9A1750;
+}
+
+/*vendor dates styling */
+#v-date {
+	font-size: 21px;
+	margin-left:15px;
+}
+
+/* market image styling */
+#vendor-pic {
+	width: 30%;
+	text-align: center;
+	border-radius: 8px;
+}
+
+/* workshop div styling */
+#workshop {
+	float: center;
+	text-align: center;
+	margin-left: 150px;
+}
+/* styling the workshop paragraph */
+#work-para {
+	font-size: 20px;
+	text-align:left;
+	margin-left: 270px;
+}
+
+/* styling the workshop paragraph title */
+#work-head {
+	font-size: 25px;
+	margin-left: 105px;
+	color: #9A1750;
+}
+
+/*workshop dates styling */
+#work-date {
+	font-size: 21px;
+	margin-left: 280px;
+	text-align: center;
+}
+
+/* crawford art gallery image styling */
+#workshop-pic {
+	width: 25%;
+	text-align: center;
+	border-radius: 8px;
+	margin-left: 680px;
+}
+
+/* workshop div styling */
+#warehouse {
+	float: center;
+	text-align: center;
+	margin-left: 140px;
+}
+/* styling the workshop paragraph */
+#w-para {
+	font-size: 20px;
+	text-align:left;
+	margin-left: 120px;
+}
+
+/* styling the workshop paragraph title */
+#w-head {
+	font-size: 25px;
+	margin-left: 105px;
+	color: #9A1750;
+}
+
+/*workshop dates styling */
+#w-date {
+	font-size: 21px;
+	margin-left: 110px;
+	text-align: center;
+}
+
+/* crawford art gallery image styling */
+#warehouse-pic {
+	width: 18%;
+	text-align: center;
+	border-radius: 50%;
+	margin-left: 100px;
+}
+
+/* bar div styling */
+#bar {
+	float: center;
+	text-align: center;
+	margin-left: 140px;
+}
+/* styling the bar paragraph */
+#b-para {
+	font-size: 20px;
+	text-align:left;
+	margin-left: 120px;
+}
+
+/* styling the bar paragraph title */
+#b-head {
+	font-size: 25px;
+	margin-left: 100px;
+	color: #9A1750;
+}
+
+/*bar dates styling */
+#b-date {
+	font-size: 21px;
+	margin-left: 90px;
+	text-align: center;
+}
+
+/* roundy image styling */
+#bar-pic {
+	width: 30%;
+	text-align: center;
+	border-radius: 8px;
+	margin-left: 100px;
+}
+
+

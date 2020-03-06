@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- descriptions -->
+	<meta charset="utf-8">
+	<meta name="author" content="Eliot Forrester 119376013">
+	<meta name="description" content="IS1113 Project">
+	
+	<!-- page title -->
+	<title>Interests - Sport</title>
+
+	<!-- linking stlyesheet -->
+	<link href="interests.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Code for the top navigation bar -->
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="cv.html">Curriculum Vitae</a>
+		<a class="active" href="interests.html">Interests</a>
+		<a href="consulting.html">Consulting Services</a>
+		<a href="shop.html">Shop</a>
+	</div>
+	
+		<!-- sidenav code -->
+	<div class = "sidenav">
+		<a class="active" href = "interests.html">Sport</a>
+		<a href = "travel.html">Travel</a>
+	</div>
+	
+	<div class= "main">
+	
+		<!-- badminton section code -->
+		<div id="badminton">
+			
+			<!-- badminton section title -->
+			<h2 id="badminton-title">Badminton</h2>
+		
+			<!-- jQuery scroller -->
+			<div id="scroller1" style="width: 550px; height: 400px; margin: 0 auto;">
+				<div class="innerScrollArea1">
+					<ul>
+					
+						<li><img src="bad1.jpeg" width="600" height="330" /></li>
+						<li><img src="bad2.jpeg" width="600" height="330" /></li>
+						<li><img src="bad3.jpeg" width="600" height="330" /></li>
+						<li><img src="bad4.jpeg" width="600" height="330" /></li>
+						<li><img src="bad5.jpeg" width="606" height="330" /></li>
+					
+					</ul>				
+				</div>								
+			</div>
+			
+			<!-- badminton section paragraph -->
+			<p id= "badminton-para">Badminton has been one of my passions for years now. I started playing in 2015. Recently I have developed an interest in professional play. My favourite
+			player has to be Lin Dan. He is a Chinese professional player. He is a two-time Olympic champion, five-time World champion, as well as a six-time All England champion</p>
+			
+			
+		</div>
+		
+		<!-- volleyball section code -->
+		<div id="volleyball">
+		
+			<h2 id="volbol-title">Volleyball</h2>
+		
+			<!-- jQuery scroller2 -->
+			<div id="scroller2" style="width: 550px; height: 400px; margin: 0 auto;">
+				<div class="innerScrollArea2">
+					<ul>
+					
+						<li><img src="volbol1.jpeg" width="600" height="330" /></li>
+						<li><img src="volbol2.jpeg" width="600" height="330" /></li>
+						<li><img src="volbol3.jpeg" width="600" height="330" /></li>														
+						<li><img src="volbol4.jpeg" width="600" height="330" /></li>
+						<li><img src="volbol5.jpeg" width="606" height="330" /></li>
+					
+					</ul>				
+				</div>								
+			</div>
+				
+			<!-- volleyball paragraph -->
+			<p id="volbol-para"></p>
+		
+		</div>
+	</div>
+	
+	<!-- image scroller jQuery code -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		// Scroller 1 code
+		$(function(){
+			var scroller = $('#scroller1 div.innerScrollArea1');
+			var scrollerContent = scroller.children('ul');
+			scrollerContent.children().clone().appendTo(scrollerContent);
+			var curX = 0;
+			scrollerContent.children().each(function(){
+				var $this = $(this);
+				$this.css('left', curX);
+				curX += $this.outerWidth(true);
+			});
+			var fullW = curX / 2;
+			var viewportW = scroller.width();
+
+			// Scrolling speed management
+			var controller = {curSpeed:0, fullSpeed:2};
+			var $controller = $(controller);
+			var tweenToNewSpeed = function(newSpeed, duration)
+			{
+				if (duration === undefined)
+					duration = 600;
+				$controller.stop(true).animate({curSpeed:newSpeed}, duration);
+			};
+
+			// Pause on hover
+			scroller.hover(function(){
+				tweenToNewSpeed(0);
+			}, function(){
+				tweenToNewSpeed(controller.fullSpeed);
+			});
+
+			// Scrolling management; start the automatical scrolling
+			var doScroll = function()
+			{
+				var curX = scroller.scrollLeft();
+				var newX = curX + controller.curSpeed;
+				if (newX > fullW*2 - viewportW)
+					newX -= fullW;
+				scroller.scrollLeft(newX);
+			};
+			setInterval(doScroll, 20);
+			tweenToNewSpeed(controller.fullSpeed);
+		});
+		
+		
+		// Scroller 2 code
+		$(function(){
+			var scroller = $('#scroller2 div.innerScrollArea2');
+			var scrollerContent = scroller.children('ul');
+			scrollerContent.children().clone().appendTo(scrollerContent);
+			var curX = 0;
+			scrollerContent.children().each(function(){
+				var $this = $(this);
+				$this.css('left', curX);
+				curX += $this.outerWidth(true);
+			});
+			var fullW = curX / 2;
+			var viewportW = scroller.width();
+
+			// Scrolling speed management
+			var controller = {curSpeed:0, fullSpeed:2};
+			var $controller = $(controller);
+			var tweenToNewSpeed = function(newSpeed, duration)
+			{
+				if (duration === undefined)
+					duration = 600;
+				$controller.stop(true).animate({curSpeed:newSpeed}, duration);
+			};
+
+			// Pause on hover
+			scroller.hover(function(){
+				tweenToNewSpeed(0);
+			}, function(){
+				tweenToNewSpeed(controller.fullSpeed);
+			});
+
+			// Scrolling management; start the automatical scrolling
+			var doScroll = function()
+			{
+				var curX = scroller.scrollLeft();
+				var newX = curX + controller.curSpeed;
+				if (newX > fullW*2 - viewportW)
+					newX -= fullW;
+				scroller.scrollLeft(newX);
+			};
+			setInterval(doScroll, 20);
+			tweenToNewSpeed(controller.fullSpeed);
+		});
+	</script>
+
+</body>
+
+</html>
