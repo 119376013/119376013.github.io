@@ -1,38 +1,248 @@
-
+/* I used w3schools to help with this code */
 /* Adding a background to the topnav bar */
 .topnav {
-		 background-color: #E3E2DF;
-		 overflow: hidden;
-		 margin-top: 30px;
-		 
+	background-color: #E3E2DF;
+	overflow: hidden;
+	margin-top: 30px;
+ 
 }
 	
 /* Style the links inside the navigation bar */	
 .topnav a {
-			float: left;
-			color: #9A1750;
-			text-align: center;
-			padding: 5px 10px;
-			text-decoration: none;
-			font-size: 25px;
-			font-family: Times;	
-			
+	float: left;
+	color: #9A1750;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Times;	
+
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-				 background-color: #E3AFBC;
-				 color: black;
+	background-color: #E3AFBC;
+	color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-					background-color: #E3AFBC;
-					color: black;
+	background-color: #E3AFBC;
+	color: black;
 }
 
 /* styling website background */
 body {
-		background-color: #E3E2DF;	
+	background-color: #E3E2DF;	
 }
 
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: #9A1750;
+  padding: 6px 8px 6px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E3AFBC;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #E3E2DF;
+  color: #9A1750;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* I used w3schools to help with this code */
+/* Adding a background to the sidenav bar */
+.sidenav {
+	width: 210px;
+	position: fixed;
+	z-index: 1;
+	top: 250px;
+	left: 10px;
+	background: #E3E2DF;
+	overflow-x: hidden;
+	padding: 8px 0;
+}
+
+/* Style the links inside the navigation bar */
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #9A1750;
+	display: block;
+	text-align: center;
+	
+}
+
+/* Change the color of links on hover */
+.sidenav a:hover {
+ 	background-color: #E3AFBC;
+	color: black;
+}
+
+/* Adds a color to the active/current link */
+.sidenav a.active {
+	background-color: #E3AFBC;
+	color: black;
+}
+
+/* styling for main body */
+.main {
+	margin-left: 250px; /* Same width as the sidebar + left position in px */
+	float: center;
+	padding: 0px 20px;
+	text-align: center;
+	display: inline-block;
+}	
+
+/* title styling */
+#f-title {
+	font-size: 35px;
+	color: #9A1750;
+	text-align: center;
+	margin-left: 240px;
+}
+
+/* image slider container css */
+.container {
+	position: absolute;
+	width: 50%;
+	margin-left: 470px;
+	border-radius: 8px;
+	border: thick solid #9A1750;
+}
+
+/* image slider css */
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+
+}
+
+/* image slider css */
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #9A1750;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+/* image slider hover css */
+.container:hover .overlay{
+	width: 100%;
+}
+
+/* image slider text css */
+.text {
+	white-space: nowrap;
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* about us paragraph styling */
+#f-para {
+	font-size: 20px;
+	text-align: left;
+	margin-top: 450px;
+	margin-left: 250px;
+}
+
+/* hyperautomation image styling */
+#hyper-pic {
+	width: 40%;
+	margin-top: 20px;
+	margin-left: 570px;
+	border-radius: 8px;
+	border: thick solid #9A1750;
+}
+
+/* hyperautomation paragraph styling */
+#hyper-para {
+	font-size: 20px;
+	float: center;
+	text-align: left;
+	margin-left: 250px;
+	margin-right: 5px;
+}
+
+/* multiexperience image styling */
+#multi-pic {
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 480px;
+	border-radius: 8px;
+	border: thick solid #9A1750;
+}
+
+/* multiexperience paragraph styling */
+#multi-para {
+	font-size: 20px;
+	float: center;
+	text-align: left;
+	margin-left: 250px;
+	margin-right: 5px;
+}
+/* distributed cloud image styling */
+#dist-pic {
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 480px;
+	border-radius: 8px;
+	border: thick solid #9A1750;
+}
+
+/* distributed cloud paragraph styling */
+#dist-para {
+	font-size: 20px;
+	float: center;
+	text-align: left;
+	margin-left: 250px;
+	margin-right: 5px;
+}

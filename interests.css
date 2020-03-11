@@ -1,84 +1,106 @@
-
+/* I used w3schools to help with this code */
 /* Adding a background to the topnav bar */
 .topnav {
-		 background-color: #E3E2DF;
-		 overflow: hidden;
-		 margin-top: 30px;
-		 
+	background-color: #E3E2DF;
+	overflow: hidden;
+	margin-top: 30px;
+ 
 }
 	
 /* Style the links inside the navigation bar */	
 .topnav a {
-			float: left;
-			color: #9A1750;
-			text-align: center;
-			padding: 5px 10px;
-			text-decoration: none;
-			font-size: 25px;
-			font-family: Times;	
-			
+	float: left;
+	color: #9A1750;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Times;	
+
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-				 background-color: #E3AFBC;
-				 color: black;
+	background-color: #E3AFBC;
+	color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-					background-color: #E3AFBC;
-					color: black;
+	background-color: #E3AFBC;
+	color: black;
 }
 
 /* styling website background */
 body {
-		background-color: #E3E2DF;	
+	background-color: #E3E2DF;	
 }
 
-/* Adding a background to the sidenav bar */
-.sidenav {
-	width: 140px;
-	position: fixed;
-	z-index: 1;
-	top: 250px;
-	left: 10px;
-	background: #E3E2DF;
-	overflow-x: hidden;
-	padding: 8px 0;
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.sidenav a {
-	padding: 6px 8px 6px 16px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #9A1750;
-	display: block;
-	text-align: center;
-	
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: #9A1750;
+  padding: 6px 8px 6px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;  
 }
 
-/* Change the color of links on hover */
-.sidenav a:hover {
- 	background-color: #E3AFBC;
-	color: black;
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E3AFBC;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-/* Adds a color to the active/current link */
-.sidenav a.active {
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #E3E2DF;
+  color: #9A1750;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Add a color to the active/current link */
+.dropdown .active {
 	background-color: #E3AFBC;
 	color: black;
 }
 
 /* styling for main body */
 .main {
-	margin-left: 250px; /* Same width as the sidebar + left position in px */
+	margin-left: 110px; /* Same width as the sidebar + left position in px */
 	float: center;
 	padding: 0px 20px;
 	text-align: center;
 	display: inline-block;
 }	
+
+/* jQuery from: https://www.dwuser.com/education/content/creating-a-jquery-image-scroller/?fbclid=IwAR1pK2FSf6WJxKI4XhGTBQAnVepLpHCVhl3VJp8JJTVdfXxG4VLw6i8p6X8 */
 
 /* badminton div styling */
 #badminton {
@@ -92,14 +114,14 @@ body {
 #badminton-title {
 	font-size: 35px;
 	color: #9A1750;
-	margin-right: 380px;
+	margin-right: 340px;
 	margin-bottom: -0.5px	
 }
 
 /* scroller1 styling */
 #scroller1 {
     position: relative;
-	right: 190px;
+	right: 170px;
 	
 }
 
@@ -149,14 +171,14 @@ body {
 #volbol-title {
 	font-size: 35px;
 	color: #9A1750;
-	margin-right: 380px;
+	margin-right: 340px;
 	margin-bottom: -0.5px	
 }
 
 /* scroller 2 styling */
 #scroller2 {
     position: relative;
-	right: 190px;
+	right: 170px;
 	
 }
 

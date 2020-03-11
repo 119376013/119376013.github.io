@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
 
 <head>
 	<!-- descriptions -->
@@ -16,20 +16,28 @@
 </head>
 
 <body>
+	<!-- I used w3schools to help with this code -->
 	<!-- Code for the top navigation bar -->
 	<div class="topnav">
 		<a href="index.html">Home</a>
 		<a href="cv.html">Curriculum Vitae</a>
-		<a class="active" href="interests.html">Interests</a>
-		<a href="consulting.html">Consulting Services</a>
-		<a href="shop.html">Shop</a>
+
+	<!-- dropdown code -->
+	<!-- I used w3schools to help with this code -->
+	<div class="dropdown">
+		<button class="dropbtn">Interests
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="interests.html">Sports</a>
+			<a href="travel.html">Travel</a>
+		</div>
 	</div>
 	
-		<!-- sidenav code -->
-	<div class = "sidenav">
-		<a class="active" href = "interests.html">Sport</a>
-		<a href = "travel.html">Travel</a>
+		<a href="consulting.html">About Consulting</a>
+		<a href="Ebus1.html">Services</a>
 	</div>
+
 	
 	<div class= "main">
 	
@@ -40,6 +48,7 @@
 			<h2 id="badminton-title">Badminton</h2>
 		
 			<!-- jQuery scroller -->
+			<!-- jQuery from: https://www.dwuser.com/education/content/creating-a-jquery-image-scroller/?fbclid=IwAR1pK2FSf6WJxKI4XhGTBQAnVepLpHCVhl3VJp8JJTVdfXxG4VLw6i8p6X8 -->
 			<div id="scroller1" style="width: 550px; height: 400px; margin: 0 auto;">
 				<div class="innerScrollArea1">
 					<ul>
@@ -67,6 +76,7 @@
 			<h2 id="volbol-title">Volleyball</h2>
 		
 			<!-- jQuery scroller2 -->
+			<!-- jQuery from: https://www.dwuser.com/education/content/creating-a-jquery-image-scroller/?fbclid=IwAR1pK2FSf6WJxKI4XhGTBQAnVepLpHCVhl3VJp8JJTVdfXxG4VLw6i8p6X8 -->
 			<div id="scroller2" style="width: 550px; height: 400px; margin: 0 auto;">
 				<div class="innerScrollArea2">
 					<ul>
@@ -90,6 +100,7 @@
 	</div>
 	
 	<!-- image scroller jQuery code -->
+	<!-- jQuery from: https://www.dwuser.com/education/content/creating-a-jquery-image-scroller/?fbclid=IwAR1pK2FSf6WJxKI4XhGTBQAnVepLpHCVhl3VJp8JJTVdfXxG4VLw6i8p6X8 -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		// Scroller 1 code

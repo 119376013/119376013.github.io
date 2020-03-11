@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+	<!-- descriptions -->
+	<meta charset="utf-8">
+	<meta name="author" content="Eliot Forrester 119376013">
+	<meta name="description" content="IS1113 Project">
+  
+	<!-- page title -->
+	<title>Shop</title>
+
+	<!-- linking css for welcome page -->
+	<link rel="Stylesheet" type="text/css" href="Ebus1.css">
+</head>
+
+<body>
+	<!-- I used w3schools to help with this code -->
+	<!-- Code for the top navigation bar -->
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="cv.html">Curriculum Vitae</a>
+	
+	<!-- dropdown code -->
+		<!-- I used w3schools to help with this code -->
+
+	<div class="dropdown">
+		<button class="dropbtn">Interests
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="interests.html">Sports</a>
+			<a href="travel.html">Travel</a>
+		</div>
+	</div>
+	
+		<a href="consulting.html">About Consulting</a>
+		<a class="active" href="Ebus1.html">Services</a>
+	</div>
+	
+	<div class="main">
+
+		<div id="content">
+			<center><h3>Select a Consulting Service</h3>
+			
+				<input type="radio" id="hyper" name="service" value="200">
+
+				<label for="hyperautomation">Hyperautomation @ €200</label><br>
+
+				<input type="radio" id="multi" name="service" value="500">
+
+				<label for="MultiExperienced">MultiExperienced @ €500</label><br>
+
+				<input type="radio" id="distributed" name="service" value="1000">
+
+				<label for="Distributed Cloud">Distributed Cloud @ €1000</label></p>
+
+		 
+					<p id="SubTotal"></p>
+
+					<p id="Discount"></p>
+
+					<p id="VAT"></p>
+
+					<p id="Total"></p>
+
+				<button class="button" onclick="calcSub(this.value)">Calculate Cost</button>
+
+				<button class="button" onclick="uncheck()">Clear Selection</button>
+
+			</center>
+
+		 </div>
+
+		<script>
+
+			var argSelection = 0;
+
+			var argdiscountAmt, argvatAmt, argtotalPrice, argsubTotal;
+
+			function calcSub() {
+
+				if (hyper.checked == true){
+
+					argSelection = hyper.value;
+				}
+
+				else if (multi.checked == true){
+
+					argSelection = multi.value;
+
+				}
+
+				else if (distributed.checked == true){
+
+					argSelection = distributed.value;
+
+				}
+
+				calcVatTotal(argSelection);
+
+				}
+
+
+			function calcVatTotal(parmSelection){
+
+				argsubTotal = parmSelection
+				
+				argdiscountAmt = 0.05 * argsubTotal;
+
+				argvatAmt = 0.2 * (argsubTotal - argdiscountAmt);
+
+				argtotalPrice = argsubTotal -argdiscountAmt + argvatAmt;
+
+				calcDisp(argsubTotal, argdiscountAmt, argvatAmt, argtotalPrice);
+
+			}
+
+			function calcDisp(parmsubTotal, parmdiscountAmt, parmvatAmt, parmtotalPrice) {
+
+				document.getElementById("SubTotal").innerHTML = "Subtotal = " + "        " + "€" + parmsubTotal;
+
+				document.getElementById("Discount").innerHTML = "5% Discount = " + "                " + "-€" + parmdiscountAmt.toFixed(2);
+
+				document.getElementById("VAT").innerHTML = "Vat @ 20% = " + "                     " + "€" + parmvatAmt.toFixed(2);
+
+				document.getElementById("Total").innerHTML = "Total = "  + "                  " + "€"+ parmtotalPrice.toFixed(2);
+
+				document.getElementById("SubTotal").style.display = "block";
+				
+				document.getElementById("Discount").style.display = "block";
+				
+				document.getElementById("VAT").style.display = "block";
+				
+				document.getElementById("Total").style.display = "block";
+			}
+
+			
+			function uncheck() {
+				document.getElementById("hyper").checked = false;
+
+				document.getElementById("multi").checked = false;
+
+				document.getElementById("distributed").checked = false;
+
+				document.getElementById("SubTotal").style.display = "none";
+				
+				document.getElementById("Discount").style.display = "none";
+				
+				document.getElementById("VAT").style.display = "none";
+				
+				document.getElementById("Total").style.display = "none";
+			}
+			
+		</script>
+	
+	</div>
+	
+</body>
+
+</html>

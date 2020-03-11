@@ -1,68 +1,86 @@
-
+/* I used w3schools to help with this code */
 /* Adding a background to the topnav bar */
 .topnav {
-		 background-color: #E3E2DF;
-		 overflow: hidden;
-		 margin-top: 30px;
-		 
+	background-color: #E3E2DF;
+	overflow: hidden;
+	margin-top: 30px; 
 }
 	
 /* Style the links inside the navigation bar */	
 .topnav a {
-			float: left;
-			color: #9A1750;
-			text-align: center;
-			padding: 5px 10px;
-			text-decoration: none;
-			font-size: 25px;
-			font-family: Times;	
-			
+	float: left;
+	color: #9A1750;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Times;		
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-				 background-color: #E3AFBC;
-				 color: black;
+	background-color: #E3AFBC;
+	color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-					background-color: #E3AFBC;
-					color: black;
+	background-color: #E3AFBC;
+	color: black;
 }
 
 /* styling website background */
 body {
-		background-color: #E3E2DF;	
+	background-color: #E3E2DF;	
 }
 
-/* Adding a background to the sidenav bar */
-.sidenav {
-	width: 140px;
-	position: fixed;
-	z-index: 1;
-	top: 250px;
-	left: 10px;
-	background: #E3E2DF;
-	overflow-x: hidden;
-	padding: 8px 0;
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.sidenav a {
-	padding: 6px 8px 6px 16px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #9A1750;
-	display: block;
-	text-align: center;
-	
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: #9A1750;
+  padding: 6px 8px 6px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
-/* Change the color of links on hover */
-.sidenav a:hover {
- 	background-color: #E3AFBC;
-	color: black;
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E3AFBC;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #E3E2DF;
+  color: #9A1750;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Adds a color to the active/current link */
@@ -73,9 +91,75 @@ body {
 
 /* styling for main body */
 .main {
-	margin-left: 250px; /* Same width as the sidebar + left position in px */
+	margin-left: 110px; /* Same width as the sidebar + left position in px */
 	float: center;
 	padding: 0px 20px;
 	text-align: center;
 	display: inline-block;
 }	
+
+/* travel div styling */
+#travel {
+	margin-left: 440px;
+	padding: 20px 10px;
+	float: center;
+	
+}
+
+/* travel title styling */
+#travel-title {
+	font-size: 35px;
+	color: #9A1750;
+	margin-right: 520px;
+	margin-bottom: -0.5px	
+}
+
+/* jQuery from: https://www.dwuser.com/education/content/creating-a-jquery-image-scroller/?fbclid=IwAR1pK2FSf6WJxKI4XhGTBQAnVepLpHCVhl3VJp8JJTVdfXxG4VLw6i8p6X8 */
+/* scroller 1 styling */
+#scroller1 {
+    position: relative;
+	right: 260px;
+	
+}
+
+/*inner scroll area styling scroller 2 */
+#scroller1 .innerScrollArea1 {
+	overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 70px;
+	border: thick solid #9A1750;
+}
+
+/* scroller2 list styling */
+#scroller1 ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* scroller2 list items styling */
+#scroller1 li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+/* travel paragraph styling */
+#travel-para {
+	margin-top: -50px;
+	font-size: 20px;
+	text-align: left;
+	margin-left: -540px;
+}
+
+/* places I'd like to go paragraph styling */
+#where-go {
+	margin-top: -50px;
+	font-size: 20px;
+	text-align: left;
+	margin-left: -540px;
+}
