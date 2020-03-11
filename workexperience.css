@@ -150,7 +150,7 @@ body {
 /*vendor dates styling */
 #v-date {
 	font-size: 21px;
-	margin-left:15px;
+	margin-left: -120px;
 }
 
 /* market image styling */
@@ -159,6 +159,7 @@ body {
 	text-align: center;
 	border-radius: 8px;
 	border: thick solid #9A1750;
+	margin-right: 110px;
 }
 
 /* workshop div styling */
@@ -171,20 +172,20 @@ body {
 #work-para {
 	font-size: 20px;
 	text-align:left;
-	margin-left: 270px;
+	margin-left: 0px;
 }
 
 /* styling the workshop paragraph title */
 #work-head {
 	font-size: 25px;
-	margin-left: 105px;
+	margin-left: -100px;
 	color: #9A1750;
 }
 
 /*workshop dates styling */
 #work-date {
 	font-size: 21px;
-	margin-left: 280px;
+	margin-left: -100px;
 	text-align: center;
 }
 
@@ -193,7 +194,7 @@ body {
 	width: 25%;
 	text-align: center;
 	border-radius: 8px;
-	margin-left: 680px;
+	margin-left: -110px;
 	border: thick solid #9A1750;
 }
 
@@ -207,20 +208,20 @@ body {
 #w-para {
 	font-size: 20px;
 	text-align:left;
-	margin-left: 120px;
+	margin-left: 10px;
 }
 
 /* styling the workshop paragraph title */
 #w-head {
 	font-size: 25px;
-	margin-left: 105px;
+	margin-left: -100px;
 	color: #9A1750;
 }
 
 /*workshop dates styling */
 #w-date {
 	font-size: 21px;
-	margin-left: 110px;
+	margin-left: -100px;
 	text-align: center;
 }
 
@@ -229,7 +230,7 @@ body {
 	width: 18%;
 	text-align: center;
 	border-radius: 50%;
-	margin-left: 100px;
+	margin-left: -100px;
 	
 }
 
@@ -243,20 +244,20 @@ body {
 #b-para {
 	font-size: 20px;
 	text-align:left;
-	margin-left: 120px;
+	margin-left: 10px;
 }
 
 /* styling the bar paragraph title */
 #b-head {
 	font-size: 25px;
-	margin-left: 100px;
+	margin-left: -100px;
 	color: #9A1750;
 }
 
 /*bar dates styling */
 #b-date {
 	font-size: 21px;
-	margin-left: 90px;
+	margin-left: -100px;
 	text-align: center;
 }
 
@@ -265,7 +266,7 @@ body {
 	width: 30%;
 	text-align: center;
 	border-radius: 8px;
-	margin-left: 100px;
+	margin-left: -100px;
 	border: thick solid #9A1750;
 }
 
