@@ -15,12 +15,10 @@
 	text-decoration: none;
 	font-size: 25px;
 	font-family: Times;
-			
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-	 
 	background-color: #E3AFBC;
 	color: black;
 }
@@ -38,51 +36,51 @@ body {
 
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
-  float: left;
-  overflow: hidden;
+	float: left;
+	overflow: hidden;
 }
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  font-size: 25px;
-  border: none;
-  outline: none;
-  color: #9A1750;
-  padding: 6px 8px 6px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+	font-size: 25px;
+	border: none;
+	outline: none;
+	color: #9A1750;
+	padding: 6px 8px 6px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
 }
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #E3AFBC;
-  min-width: 110px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #E3AFBC;
+	min-width: 110px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
 /* Style the links inside the dropdown */
 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
 }
 
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #E3E2DF;
-  color: #9A1750;
+	background-color: #E3E2DF;
+	color: #9A1750;
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
 }
 
 /* I used w3schools to help with this code */
