@@ -38,46 +38,56 @@
 		<a class="active" href="Ebus1.html">Services</a>
 	</div>
 	
+
+	<!-- main div code -->
 	<div class="main">
-
+		
+		<!-- content div code -->
 		<div id="content">
-			<center><h3>Select a Consulting Service</h3>
+		
 			
+			
+				<h3>Select a Consulting Service</h3>
+				<!-- radio button code -->
 				<input type="radio" id="hyper" name="service" value="200">
-
-				<label for="hyperautomation">Hyperautomation @ €200</label><br>
-
+				<!-- label for hyperautomation -->
+				<label>Hyperautomation @ €200</label><br>
+				
+				<!-- radio button code -->
 				<input type="radio" id="multi" name="service" value="500">
-
-				<label for="MultiExperienced">MultiExperienced @ €500</label><br>
-
+				<!-- label for multiexperience -->
+				<label>Multiexperience @ €500</label><br>
+				
+				<!-- radio button code -->
 				<input type="radio" id="distributed" name="service" value="1000">
+				<!-- label for distributed cloud -->
+				<label>Distributed Cloud @ €1000</label>
 
-				<label for="Distributed Cloud">Distributed Cloud @ €1000</label></p>
+				<!-- paragraphs for totals to be inserted in -->
+				<p id="SubTotal"></p>
 
-		 
-					<p id="SubTotal"></p>
+				<p id="Discount"></p>
+				
+				<p id="VAT"></p>
 
-					<p id="Discount"></p>
-
-					<p id="VAT"></p>
-
-					<p id="Total"></p>
-
+				<p id="Total"></p>
+				
+				<br />
+				<!-- button code -->
 				<button class="button" onclick="calcSub(this.value)">Calculate Cost</button>
-
+				
+				<!-- button code -->
 				<button class="button" onclick="uncheck()">Clear Selection</button>
 
-			</center>
-
-		 </div>
+		</div>
 
 		<script>
-
+			//declaring variables and equaling argSelection to 0
 			var argSelection = 0;
 
 			var argdiscountAmt, argvatAmt, argtotalPrice, argsubTotal;
 
+			//1st function: equalling argSelection to the value of the checked radio button
 			function calcSub() {
 
 				if (hyper.checked == true){
@@ -96,12 +106,13 @@
 					argSelection = distributed.value;
 
 				}
-
+				//pass argSelection
 				calcVatTotal(argSelection);
 
 				}
 
-
+			//fuction 2: calculations for vat, discounts and subtotal and total price
+			//calling parmSelection
 			function calcVatTotal(parmSelection){
 
 				argsubTotal = parmSelection
@@ -111,11 +122,13 @@
 				argvatAmt = 0.2 * (argsubTotal - argdiscountAmt);
 
 				argtotalPrice = argsubTotal -argdiscountAmt + argvatAmt;
-
+				//passing argsubTotal, argdiscountAmt, argvatAmt, argtotalPrice
 				calcDisp(argsubTotal, argdiscountAmt, argvatAmt, argtotalPrice);
 
 			}
-
+			
+			//function 3: writing string and the passed amounts to the paragraphs previously defined on button press
+			//calling parmsubTotal, parmdiscountAmt, parmvatAmt, parmtotalPrice
 			function calcDisp(parmsubTotal, parmdiscountAmt, parmvatAmt, parmtotalPrice) {
 
 				document.getElementById("SubTotal").innerHTML = "Subtotal = " + "        " + "€" + parmsubTotal;
@@ -125,7 +138,8 @@
 				document.getElementById("VAT").innerHTML = "Vat @ 20% = " + "                     " + "€" + parmvatAmt.toFixed(2);
 
 				document.getElementById("Total").innerHTML = "Total = "  + "                  " + "€"+ parmtotalPrice.toFixed(2);
-
+				
+				//putting the strings into blocks
 				document.getElementById("SubTotal").style.display = "block";
 				
 				document.getElementById("Discount").style.display = "block";
@@ -135,7 +149,7 @@
 				document.getElementById("Total").style.display = "block";
 			}
 
-			
+			//clearing checkboxes and hiding blocks on button press
 			function uncheck() {
 				document.getElementById("hyper").checked = false;
 

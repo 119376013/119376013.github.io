@@ -89,6 +89,7 @@ body {
 	text-align: center;
 	font-family: Times;
 	font-size: 100px;
+	margin-top: 0px;
 }
 
 /* main2 styling */
@@ -97,4 +98,10 @@ body {
 	font-family: Times;
 	font-size: 100px;
 	color: #9A1750
+}
+
+#github {
+	font-size: 25px;
+	margin-left: 1210px;
+	margin-top: 280px;
 }
